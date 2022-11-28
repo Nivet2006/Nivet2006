@@ -1,5 +1,5 @@
 <h1 align="center">Hi, <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> I'm Nived</h1>
-<h3 align="center">A developer from India</h3>
+<h3 align="center">A developer</h3>
 <h3 align="center">This is the place where I opensource stuff!!</h3>
 
 <!--<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=nived-dev" alt="nived-dev" /></a> </p>--><br>
