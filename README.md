@@ -9,7 +9,7 @@
 
 - 👨‍💻 All of my projects are available [here](https://github.com/nivet2006)
 
-- 📝 I usually write articles on [dev.to]()
+<!-- 📝 I usually write articles on [dev.to]()-->
 
 - 💬 Ask me about **html, css,js,Electron.js, Typescipt**
 
