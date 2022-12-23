@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function disableClick(){
+ document.onclick=function(event){
+ if (event.button == 2) {
+ alert('Right Click Message');
+ return false;
+ }
+ }
+ }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,11 +29,12 @@
         });
         
     </script>
+    
     <script>
         console.log("connected to sourcecode.....")
     </script>
 </head>
-<body class="container-center">
+<body onLoad="disableClick()" class="container-center">
 
     <div id="navigation"></div>
 
