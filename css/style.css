@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
 
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
 
 :root {
     --primary-color: black;
