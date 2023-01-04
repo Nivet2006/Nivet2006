@@ -2,3 +2,11 @@
 ./projects.html
 ./lib/components.html
 ./.env
+./node_modules
+./.vscode
+./package-lock.json
+./package.json
+./projects.html
+./sandbox.confog.json
+./lib/components.html
+./.codesandbox/workspace.json
