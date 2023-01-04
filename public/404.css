@@ -1,10 +1,99 @@
-/*begin-commonstyles library*//*!
- * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2021 Froala Labs
- */
-
- .fr-clearfix::after {
+.u-section-2 .u-group-1 {
+  width: 482px;
+  min-height: 471px;
+  background-image: none;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  height: auto;
+  margin: 60px auto 60px 0;
+}
+.u-section-2 .u-container-layout-1 {
+  padding: 30px;
+}
+.u-section-2 .u-text-1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  margin: 0;
+}
+.u-section-2 .u-text-2 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  margin: 20px 0 0;
+}
+.u-section-2 .u-btn-1 {
+  border-style: none none solid;
+  font-weight: 500;
+  padding: 0;
+}
+.u-section-2 .u-btn-2 {
+  border-style: none;
+  font-weight: 700;
+  background-image: none;
+  margin: 20px auto 0 0;
+  padding: 13px 39px 14px;
+}
+@media (max-width: 1199px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 558px;
+  }
+  .u-section-2 .u-group-1 {
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 592px;
+  }
+  .u-section-2 .u-group-1 {
+    width: 433px;
+    margin-bottom: 59px;
+  }
+  .u-section-2 .u-text-1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 767px) {
+   .u-section-2 {
+    background-position: 57.48% 100%;
+  }
+  .u-section-2 .u-sheet-1 {
+    min-height: 611px;
+  }
+  .u-section-2 .u-group-1 {
+    width: 368px;
+    min-height: 501px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+  .u-section-2 .u-text-1 {
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 575px) {
+   .u-section-2 {
+    background-position: 62% 100%;
+  }
+  .u-section-2 .u-sheet-1 {
+    min-height: 662px;
+  }
+  .u-section-2 .u-group-1 {
+    width: 267px;
+    min-height: 512px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .u-section-2 .u-container-layout-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .u-section-2 .u-text-1 {
+    font-size: 1.875rem;
+  }
+}
+.fr-clearfix::after {
     clear: both;
     display: block;
     content: "";
