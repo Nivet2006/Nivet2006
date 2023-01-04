@@ -1,7 +1,0 @@
-.prettierrc
-./lib/components.html
-./.env
-./node_modules
-./.vscode
-./package-lock.json
-./package.json
