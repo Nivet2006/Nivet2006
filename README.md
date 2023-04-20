@@ -3,19 +3,17 @@
 <h3 align="center">This is the place where I opensource stuff!!</h3>
 
 <!--<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=nived-dev" alt="nived-dev" /></a> </p>--><br>
-- 🔭 I’m currently working on [Dictionary_bot](#)
+- 🔭 I’m currently working on [Nothing...](#)
 
-- 🌱 I’m currently learning **Php, React Native, Kotlin**
+- 🌱 I’m currently learning **Sql**
 
 - 👨‍💻 All of my projects are available [here](https://github.com/nivet2006)
 
 <!-- 📝 I usually write articles on [dev.to]()-->
 
-- 💬 Ask me about **html, css,js,Electron.js, Typescipt**
-
 - 📫 Reach me [here](mailto:nivedshaji2006@gmail.com)
 
-- 💻 Visit my <a href="https://nivet2006.vercel.app/">Portfolio</a>
+<!--- 💻 Visit my <a href="https://nivet2006.vercel.app/">Portfolio</a>-->
 
 ### Blogs posts:
 <!-- BLOG-POST-LIST:START -->
