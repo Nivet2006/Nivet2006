@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/home/devin.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/home/devin.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/home/devin.png">
+    <title>Art | Nived</title>
+    
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/b704b7e4ad.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        //disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+        $(function() {
+            $("#navigation").load("components/navigation.html");
+            $("#footer").load("components/footer.html");
+        });
+        
+    </script>
+    
+    <script>
+        //entry to the console
+        console.log("connected to playbook.....")
+        console.log("you are currently view the drawings made by Nived shaji.")
+        console.log("the same drawing are posted on instagramand playbook.")
+        console.log("If you encounter any error while opening this site kindly send a mail with the sub ERROR.")
+    </script>
+</head>
+<body class="container-center">
+    <!--playbook embed code-->
+    <div id="navigation"></div>
+    <div style="height: 800px;">
+        <iframe src="https://www.playbook.com/e/nivet2006/Q8QibHBJ5LsWHX544CNawP1d?theme=gallery"
+          title="Nived's Artbook"
+          sandbox="allow-same-origin allow-scripts"
+          frameborder="0"
+          width="100%"
+          height="100%"
+          
+        ></iframe>
+      </div>
+</body>
+</html>

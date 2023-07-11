@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
+    /*overflow: hidden;*/ /* Hide scrollbars */
 }
 
 main {
@@ -33,13 +34,14 @@ main {
 }
 
 .container {
-   padding: 0rem 1rem;
+    padding: 0rem 1rem;
 }
 
 .container-center {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
+    /*overflow: hidden;*/
 }
 
 .button {
