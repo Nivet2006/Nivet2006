@@ -10,7 +10,7 @@
 ### About me
 
 - 🎓 I'm currently a student, eager to learn and expand my knowledge in software development.
-- 🌟 I'm 18 years old and enthusiastic about building innovative solutions.
+- 🌟 I'm 20 years old and enthusiastic about building innovative solutions.
 - 💻 I'm fluent in the following technologies and languages: HTML, CSS, JavaScript, Firebase, Python, Node.js, and MySQL.
 - 🌐 You can visit my [website](https://nivet2006.vercel.app).
 - I'm constantly exploring new technologies and expanding my skill set.
