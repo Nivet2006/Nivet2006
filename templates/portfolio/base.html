@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }} | Nived</title>
+    <script>
+        (function () {
+            let theme = null;
+            try {
+                theme = localStorage.getItem("portfolio-theme");
+            } catch (error) {
+                theme = null;
+            }
+            if (
+                theme === "dark" ||
+                (theme !== "light" &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches)
+            ) {
+                document.documentElement.classList.add("dark");
+                document.documentElement.style.colorScheme = "dark";
+            } else {
+                document.documentElement.style.colorScheme = "light";
+            }
+        })();
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'portfolio/img/home/me.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'portfolio/img/home/me.png' %}">
+    <link href="{% static 'portfolio/css/style.css' %}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b704b7e4ad.js" crossorigin="anonymous"></script>
+    <script src="{% static 'portfolio/js/app.js' %}" defer></script>
+</head>
+<body class="container-center">
+    <nav class="navigation">
+        <div class="nav-brand link">
+            <a class="link" href="{% url 'home' %}">&gt; Nived<span id="cursor">_</span></a>
+        </div>
+        <ul class="list-no-bullet nav-pills">
+            <li class="list-item-inline"><a class="link" href="{% url 'about' %}">About</a></li>
+            <li class="list-item-inline"><a class="link" href="{% url 'projects' %}">Projects</a></li>
+            <li class="list-item-inline">
+                <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+                    <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+                    </svg>
+                    <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a7.2 7.2 0 0 0 9.7 9.7z"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <ul class="footer-social-links list-no-bullets">
+            <li class="list-item-inline">
+                <a class="link" href="mailto:nivedshaji2006@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/Nivet2006" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/nivet2006" aria-label="Twitter">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.instagram.com/nivet.2006/" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-header">
+            made with <i class="fas fa-heart"></i> &amp;
+            <i class="fas fa-code fa-1x"></i> by <strong>Nived</strong>
+        </div>
+    </footer>
+</body>
+</html>

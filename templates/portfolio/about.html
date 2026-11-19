@@ -1,0 +1,40 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block content %}
+<section class="section">
+    <div class="section-header">About Me</div>
+    <div class="text-content">
+        <p>Hello, friend. Welcome to my space!</p>
+        <p>I'm Nived, a 22-year-old Computer Science Engineer from Bangalore, India. I like keeping a record of my work, hence I decided to build this web portfolio.</p>
+        <p>I wrote my first program in my freshman year of college and fell in love with it! Programming is fundamentally about building solutions to problems. Coding has also taught me to focus on details. I'm also a data science enthusiast and aspire to build software that solves real-world problems using Artificial Intelligence.</p>
+    </div>
+</section>
+
+<section class="skill">
+    <div class="section-header">Skills</div>
+    <h1 class="skill-header">Programming languages</h1>
+    <div class="skill-domain">
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/js.svg' %}" alt=""><p>Javascript</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/python.svg' %}" alt=""><p>Python</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/cpp.svg' %}" alt=""><p>C++</p></div>
+    </div>
+    <h1 class="skill-header">Web Dev</h1>
+    <div class="skill-domain">
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/html5.svg' %}" alt=""><p>HTML5</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/css3.svg' %}" alt=""><p>CSS3</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/react-js.svg' %}" alt=""><p>React.js</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/flask.svg' %}" alt=""><p>Flask</p></div>
+    </div>
+    <h1 class="skill-header">Databases</h1>
+    <div class="skill-domain">
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/mysql.png' %}" alt=""><p>MySQL</p></div>
+    </div>
+    <h1 class="skill-header">Tool-kit</h1>
+    <div class="skill-domain">
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/vscode.svg' %}" alt=""><p>VSCODE</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/git.svg' %}" alt=""><p>Git</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/linux.svg' %}" alt=""><p>Linux</p></div>
+        <div class="skill-container"><img src="{% static 'portfolio/img/skills/jupyter.png' %}" alt=""><p>Jupyter Notebook</p></div>
+    </div>
+</section>
+{% endblock %}

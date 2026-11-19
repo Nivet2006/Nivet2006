@@ -1,0 +1,14 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<section class="section">
+    <div class="section-header">Loading</div>
+    <div class="text-content">
+        <p>Redirecting to the portfolio...</p>
+    </div>
+</section>
+<script>
+    window.setTimeout(function () {
+        window.location.href = "{% url 'home' %}";
+    }, 3000);
+</script>
+{% endblock %}

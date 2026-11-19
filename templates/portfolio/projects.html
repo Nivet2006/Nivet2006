@@ -1,0 +1,44 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+{% if repositories %}
+    {% for repo in repositories %}
+    <section class="projects">
+        <div class="project-header">
+            <a class="link" href="{{ repo.html_url }}" target="_blank" rel="noopener noreferrer">
+                {{ repo.name }} |
+            </a>
+            <a class="link code-link" href="{{ repo.html_url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ repo.name }} on GitHub">
+                <i class="fab fa-github fa-1x"></i>
+            </a>
+        </div>
+        <ul class="list-no-bullet project-tags">
+            {% if repo.language %}
+            <li class="list-item-inline tag">{{ repo.language }}</li>
+            {% endif %}
+            {% for topic in repo.topics|slice:":3" %}
+            <li class="list-item-inline tag">{{ topic }}</li>
+            {% endfor %}
+        </ul>
+        <div class="project-description">
+            {{ repo.description|default:"A project by Nived." }}
+        </div>
+        <div class="project-live">
+            {% if repo.homepage %}
+            <a class="link" href="{{ repo.homepage }}" target="_blank" rel="noopener noreferrer">Open Website!</a>
+            {% else %}
+            <a class="link" href="{{ repo.html_url }}" target="_blank" rel="noopener noreferrer">View Repository!</a>
+            {% endif %}
+        </div>
+    </section>
+    {% endfor %}
+{% else %}
+<section class="projects">
+    <div class="project-description">Could not load projects from GitHub.</div>
+    <div class="project-live">
+        <a class="link" href="https://github.com/Nivet2006?tab=repositories" target="_blank" rel="noopener noreferrer">
+            View repositories on GitHub
+        </a>
+    </div>
+</section>
+{% endif %}
+{% endblock %}
