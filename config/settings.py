@@ -39,6 +39,8 @@ ALLOWED_HOSTS = [
     '.now.sh',
     '127.0.0.1',
     'localhost',
+    "nivet2006.in",
+    "www.nivet2006.in",
     '[::1]',
 ]
 allowed_hosts_env = os.environ.get('ALLOWED_HOSTS')
