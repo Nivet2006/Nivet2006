@@ -24,8 +24,11 @@ IS_VERCEL = 'VERCEL' in os.environ
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get(
-    'SECRET_KEY',
-    'django-insecure-$pe+rk5pte=to1=fm2qff@p8s-8zu%3(j6n-$*9+%#n)k&ia7^'
+    'DJANGO_SECRET_KEY',
+    os.environ.get(
+        'SECRET_KEY',
+        'django-insecure-$pe+rk5pte=to1=fm2qff@p8s-8zu%3(j6n-$*9+%#n)k&ia7^'
+    )
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -155,7 +158,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-STATIC_ROOT = BASE_DIR / 'staticfiles_build' / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STORAGES = {
     'default': {
